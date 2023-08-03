@@ -1,0 +1,14 @@
+h1 {
+  margin: 0;
+  color: #428bca;
+  font-size: 60px;
+}
+body {
+  background-color: #f3f3f3;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}

@@ -1,0 +1,18 @@
+@h1-color: #428bca; // sea blue
+@main-background-color: #f3f3f3; // sea blue
+h1 {
+    margin: if((2 > 1), 0, 3px);
+    color:  if((iscolor(@h1-color)), @h1-color, black);
+    font-size: 60px;
+}
+
+body {
+    background-color: if((iscolor(@main-background-color)), @main-background-color, white);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
