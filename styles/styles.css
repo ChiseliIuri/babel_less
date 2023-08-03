@@ -1,14 +1,77 @@
-h1 {
-  margin: 0;
-  color: #428bca;
-  font-size: 60px;
-}
 body {
   background-color: #f3f3f3;
 }
-.content {
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+input {
+  all: unset;
+}
+.row {
+  display: flex;
+  margin: 5px 0 5px 0;
+  justify-content: space-between;
+  width: 200px;
+}
+#price {
+  display: flex;
+  margin: 5px 0 5px 0;
+  justify-content: center;
+  width: 200px;
+}
+.title {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  /*   width : 70px; */
+}
+#summ {
+  height: 30px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+}
+.counter {
+  display: flex;
+  justify-content: space-around;
+  /*   border : 1px solid black;
+  border-radius : 5px; */
+  width: 70px;
+}
+.counter_item_minus {
+  width: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 900px;
+  color: red;
+  font-weight: bold;
+  font-size: 24px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.counter_item_title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.counter_item_plus {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  font-weight: bold;
+  font-size: 24px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.counter_item_minus:hover {
+  cursor: pointer;
+}
+.counter_item_plus:hover {
+  cursor: pointer;
 }
