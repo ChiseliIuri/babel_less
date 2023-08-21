@@ -1,0 +1,39 @@
+{
+  "name": "babel_less",
+  "version": "1.0.0",
+  "description": "study project for babel, webpack less and npm technologies",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChiseliIuri/babel_less.git"
+  },
+  "keywords": [
+    "study",
+    "babel",
+    "webpack",
+    "less"
+  ],
+  "author": "Chiseli Iuri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChiseliIuri/babel_less/issues"
+  },
+  "homepage": "https://github.com/ChiseliIuri/babel_less#readme",
+  "dependencies": {
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "typescript": "^4.9.5",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
