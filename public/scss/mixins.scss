@@ -1,0 +1,37 @@
+@mixin grid($cols, $margin) {
+  float: left;
+  background: #ce3d3d;
+  margin-right: $margin;
+  margin-bottom: $margin;
+  height: 150px;
+  width: ((100% - (($cols - 1) * $margin)) / $cols);
+  &:nth-child(#{$cols}n) {
+    margin-right: 0;
+  }
+}
+
+@mixin font ($color, $fontWeight) {
+  font-size: 1.1em;
+  font-weight: $fontWeight;
+  font-family: Arial, sans-serif;
+  color: $color;
+}
+
+@mixin padd ($padd...) {
+  padding: $padd;
+}
+
+@mixin link ($link, $hover, $active, $visited) {
+  font-size: 30px;
+  font-weight: bolder;
+  color: $link;
+  &:hover {
+    color: $hover;
+  }
+  &:active {
+    color: $active;
+  }
+  &:visited {
+    color: $visited;
+  }
+}

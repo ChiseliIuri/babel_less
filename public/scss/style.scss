@@ -1,0 +1,62 @@
+@import "variables";
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  @include link(black, red, blue, green)
+}
+
+#grid {
+  float: left;
+  width: 100%;
+  > div {
+    @include grid(7, 5%)
+  }
+}
+
+.block:not(.first) {
+  @include padd(20px 40px 30px);
+  background: $bgColor;
+  height: 200px;
+  width: $blockWidth;
+  margin-bottom: 20px;
+}
+
+#central-block {
+  padding: 30px;
+  ul {
+    list-style: none;
+    display: inline-block;
+  }
+  li {
+    float: left;
+    width: (100% / 3);
+    //margin-right: 10px;
+
+    a {
+      @include font(blue, bold);
+      //color: blue;
+      &:hover {
+        color: red;
+      }
+    }
+    //a:hover {
+    //  color: red;
+    //}
+  }
+  a {
+    @include font(yellow, bolder);
+    //color: blue;
+  }
+}
+
+.first {
+  background: $bgColor;
+  height: 100px;
+  margin-bottom: 20px;
+  border: $border;
+}
